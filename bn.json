@@ -1,0 +1,18 @@
+{
+    "elnSignUp": {
+        "form": {
+            "loginId": {
+                "info": "",
+                "ariaLabel": "",
+                "placeholder": "",
+                "requiredMsg": "",
+                "alphaNumMsg": ""
+            },
+            "fullName": {
+                "ariaLabel": "",
+                "placeholder": "",
+                "requiredMsg": ""
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+<!--<p>-->
+<!--  sign-up works!-->
+<!--</p>-->
+<div class="registration-form" id="registration-form">
+    <form id="sign-up-form" (ngSubmit)="signUp()">
+        <div class="form-group">
+            <input type="text" name="signup-fullName" class="form-control rounded-right required" id="signup-fullName" [(ngModel)]="elnUser.fullName" autocomplete="off" autofocus
+                   [attr.aria-label]="'elnSignUp.form.fullName.ariaLabel' | translate"
+                   [attr.placeholder]="'elnSignUp.form.fullName.placeholder' | translate"
+                   [attr.requiredMsg]="'elnSignUp.form.fullName.requiredMsg' | translate"
+                   aria-required="true"
+                   aria-invalid="false"
+                    aria-describedby="signup-fullname-error-msg">
+            <div class="validationErrMsg small text-danger mt-2 w-100" id="signup-fullname-error-msg"></div>
+        </div>
+        <!--<div class="form-group">
+            <input type="text" name="signup-user-login-id" class="form-control required alphaNum" id="signup-user-login-id" [(ngModel)]="elnUser.userLoginId" autocomplete="off"
+                   [attr.aria-label]="'elnSignUp.form.loginId.ariaLabel' | translate"
+                   [attr.placeholder]="'elnSignUp.form.loginId.placeholder' | translate"
+                   [attr.requiredMsg]="'elnSignUp.form.loginId.requiredMsg' | translate"
+                   [attr.alphaNumMsg]="'elnSignUp.form.loginId.alphaNumMsg' | translate"
+                    [attr.aria-describedby]="describedById.userLoginId"
+                   aria-required="true"
+                   aria-invalid="false">
+            <div class="form-text small mt-2" id="signup-user-loginid-tooltip">
+                <i class="fa fa-info-circle text-primary mr-1"></i> {{'elnSignUp.form.loginId.info' | translate }}
+            </div>
+            <div class="validationErrMsg small text-danger mt-2 w-100" id="signup-user-loginid-error-msg"></div>
+        </div>-->
+
+    </form>
+<!--    <div class="d-flex justify-content-center" [hidden]="!isSubmittingInProcess">-->
+<!--        <div class="spinner-border m-5 text-primary" role="status">-->
+<!--            <span class="sr-only">Loading...</span>-->
+<!--        </div>-->
+<!--    </div>-->
+</div>
